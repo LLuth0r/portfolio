@@ -25,10 +25,10 @@ export default function Header() {
                     <div className='nav-contact'>Contact</div>
                 </Link>
                 <IconContext.Provider value={{size: '2em'}} >
-                    <a href='https://www.linkedin.com/in/michael-pakulak-he-him-his-7372a05a/' target='_blank'>
+                    <a href='https://www.linkedin.com/in/michael-pakulak-he-him-his-7372a05a/' target='_blank' rel='noreferrer'>
                         <FiLinkedin className='linkedin-icon' />
                     </a>
-                    <a href='https://github.com/LLuth0r' target='_blank'>
+                    <a href='https://github.com/LLuth0r' target='_blank' rel='noreferrer'>
                         <FiGithub className='git-icon' />
                     </a>
                 </IconContext.Provider>

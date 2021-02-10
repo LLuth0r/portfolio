@@ -23,7 +23,7 @@ export default function Card1() {
 
 	return (
 		<Card className={classes.root}>
-			<a href='https://lluth0r.github.io/Heroes-and-Villains/' target='_blank'>
+			<a href='https://lluth0r.github.io/Heroes-and-Villains/' target='_blank' rel='noreferrer'>
 			<CardActionArea>
 				<CardMedia
 					className={classes.media}

@@ -23,7 +23,7 @@ export default function Card4() {
 
 	return (
 		<Card className={classes.root}>
-			<a href="https://the-cellar.netlify.app" target="_blank">
+			<a href="https://the-cellar.netlify.app" target="_blank" rel='noreferrer'>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={P4} title="The Cellar" />
 					<CardContent>

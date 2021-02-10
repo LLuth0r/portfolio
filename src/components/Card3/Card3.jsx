@@ -23,7 +23,7 @@ export default function Card3() {
 
 	return (
 		<Card className={classes.root}>
-			<a href="https://geosmin.netlify.app/" target="_blank">
+			<a href="https://geosmin.netlify.app/" target="_blank" rel='noreferrer'>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={P3} title="Geosmin" />
 					<CardContent>

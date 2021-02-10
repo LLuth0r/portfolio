@@ -23,7 +23,7 @@ export default function Card2() {
 
 	return (
 		<Card className={classes.root}>
-			<a href="https://vacation-funds.netlify.app" target="_blank">
+			<a href="https://vacation-funds.netlify.app" target="_blank" rel='noreferrer'>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={P2} title="Make Cent$" />
 					<CardContent>

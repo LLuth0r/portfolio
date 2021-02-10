@@ -23,7 +23,7 @@ export default function Card1() {
 
 	return (
 		<Card className={classes.resume}>
-			<a href={Resume} target="_blank">
+			<a href={Resume} target="_blank" rel='noreferrer'>
 				<CardActionArea>
 					<CardMedia
 						className={classes.media}
