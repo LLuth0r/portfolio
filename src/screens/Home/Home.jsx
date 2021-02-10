@@ -62,7 +62,9 @@ export default function Home() {
 						a thirst for learning new skill-sets.
 					</p>
 				</div>
+				<div className='family'>
 				<img className="family-pic" src={Family} alt="" />
+				</div>
 			</Paper>
 			<Paper className="tech" elevation={3}>
 				<h1 className="tech-title">Technologies</h1>

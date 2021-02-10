@@ -7,19 +7,36 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import Typography from "@material-ui/core/Typography";
 import P4 from "./P4.png";
 import "../Card1/Card1.css";
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
 	root: {
 		maxWidth: 300,
-		margin: ".5em .5em",
+		margin: '.5em .5em',
 	},
 	media: {
 		height: 125,
 	},
+	'@media (max-width: 1150px)': {
+		root: {
+			maxWidth: 200,
+		},
+		media: {
+			height: 75,
+		},
+	}
 });
 
 export default function Card4() {
 	const classes = useStyles();
+
+	const theme = createMuiTheme({
+		'@media (max-width: 800px)': {
+			typography: {
+				fontSize: 8,
+		},
+	}
+	});
 
 	return (
 		<Card className={classes.root}>
@@ -27,6 +44,7 @@ export default function Card4() {
 				<CardActionArea>
 					<CardMedia className={classes.media} image={P4} title="The Cellar" />
 					<CardContent>
+					<ThemeProvider theme={theme}>
 						<Typography gutterBottom variant="h5" component="h2">
 							The Cellar
 						</Typography>
@@ -34,6 +52,7 @@ export default function Card4() {
 							A wine bartering app built with Ruby on Rails and a React
 							front-end.
 						</Typography>
+						</ThemeProvider>
 					</CardContent>
 				</CardActionArea>
 			</a>

@@ -4,6 +4,7 @@
     top:0;
     height: 75px;
     width: 100%;
+    max-width: 1425px;
     background-color: black;
     display: grid;
     grid-template-columns: 30% 70%;
