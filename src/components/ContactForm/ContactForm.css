@@ -25,3 +25,33 @@
   .MuiInputBase-root {
       margin: .5em 0;
   }
+
+  /* Media queries */
+  @media all and (max-width: 600px) and (min-width: 300px) {
+    .CU-div {
+      width: 300px;
+    }
+    
+    .textfield {
+      width: 300px;
+    }
+  
+    #submit-button {
+      width: 125px;
+    }
+
+  }
+
+@media all and (max-width: 1200px) and (min-width: 600px) {
+  .CU-div {
+    width: 300px;
+  }
+  
+  .textfield {
+    width: 300px;
+  }
+
+  #submit-button {
+    width: 125px;
+  }
+}

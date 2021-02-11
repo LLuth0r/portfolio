@@ -10,12 +10,31 @@ import Resume from "./michaelpakulak.pdf";
 
 const useStyles = makeStyles({
 	resume: {
-        maxWidth: 300,
-		margin: "3.75em .5em",
+		maxWidth: 300,
+		maxHeight: 250,
+		margin: "2em .5em",
 	},
 	media: {
-		height: 200,
+		height: 125,
 	},
+	"@media (max-width: 1000px)": {
+		resume: {
+			maxWidth: 200,
+			maxHeight: 200,
+		},
+		media: {
+			height: 75,
+		},
+	},
+	'@media (max-width:825px)': {
+		resume: {
+			maxWidth: 200,
+			maxHeight: 200,
+		},
+		media: {
+			height: 70,
+		},
+	}
 });
 
 export default function Card1() {

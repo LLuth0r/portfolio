@@ -57,3 +57,34 @@
 .nav-about, .nav-projects, .nav-contact, .linkedin-icon, .git-icon {
     margin: 0 2em;
 }
+
+
+/* Media queries */
+@media all and (max-width: 600px) and (min-width: 300px) {
+    .logo {
+        font-size: 26px;
+        margin: 0 .5em;
+    }
+
+    .link {
+        margin: auto;
+    }
+
+    .nav-about, .nav-projects, .nav-contact {
+        font-size: 11px;
+    }
+
+    .nav-about, .nav-projects, .nav-contact, .linkedin-icon, .git-icon {
+        margin: 0 .5em;
+    }
+}
+
+@media all and (max-width: 900px) and (min-width: 600px) {
+	.logo {
+        font-size: 30px;
+    }
+
+    .link {
+        margin:auto;
+    }
+}

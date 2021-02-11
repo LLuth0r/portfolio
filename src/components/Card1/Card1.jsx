@@ -7,41 +7,64 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import Typography from "@material-ui/core/Typography";
 import P1 from "./P1.png";
 import "./Card1.css";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
-	root: {
+	card1: {
 		maxWidth: 300,
+		maxHeight: 250,
 		margin: ".5em .5em",
 	},
 	media: {
 		height: 125,
 	},
-	"@media (max-width: 1150px)": {
-		root: {
+	"@media (max-width: 1000px)": {
+		card1: {
 			maxWidth: 200,
+			maxHeight: 200,
 		},
 		media: {
 			height: 75,
 		},
 	},
+	'@media (max-width:825px)': {
+		card1: {
+			maxWidth: 200,
+			maxHeight: 200,
+		},
+		media: {
+			height: 70,
+		},
+	}
 });
 
+const theme = createMuiTheme();
 
+theme.typography.h5 = {
+	fontSize: "1.2rem",
+	"@media (max-width:900px)": {
+		fontSize: "1.25rem",
+	},
+	'@media (max-width:600px)': {
+		fontSize: '.75rem',
+	}
+};
+
+theme.typography.body2 = {
+	fontSize: ".85rem",
+	"@media (max-width:900px)": {
+		fontSize: ".75rem",
+	},
+	'@media (max-width:600px)': {
+		fontSize: '.6rem',
+	}
+};
 
 export default function Card1() {
 	const classes = useStyles();
-	const card1 = createMuiTheme();
-
-	card1.typography.h5 = {
-		fontSize: 12,
-		"@media (max-width: 1150px)": {
-			fontSize: ".5rem",
-		},
-	};
 
 	return (
-		<Card className={classes.root}>
+		<Card className={classes.card1}>
 			<a
 				href="https://lluth0r.github.io/Heroes-and-Villains/"
 				target="_blank"
@@ -54,7 +77,7 @@ export default function Card1() {
 						title="Heroes & Villains"
 					/>
 					<CardContent>
-						<ThemeProvider theme={card1}>
+						<ThemeProvider theme={theme}>
 							<Typography gutterBottom variant="h5" component="h2">
 								Heroes & Villains
 							</Typography>

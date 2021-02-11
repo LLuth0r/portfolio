@@ -88,30 +88,32 @@ p {
 	height: 650px;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 450px auto;
+	grid-template-columns: 25% 75%;
 	grid-template-rows: 60px auto;
 	margin: 4em 0 0 0;
 }
 
+.tech-icons {
+	margin: 0 1em;
+}
+
 .tech-title {
 	grid-column-start: 1;
+    grid-row-start: 1;
 	margin: 1em 0;
 	height: 50px;
 	text-align: center;
 }
 
 .icons {
-	margin: 7em 9em;
+    grid-column-start: 1;
+	grid-row-start: 2;
+    margin: 3em 1em;
+	height: 250px;
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
-	grid-column-start: 1;
-	width: 150px;
-	height: 350px;
-}
-
-.tech-icons {
-	margin: 0 1em;
+	justify-content: center;
+	align-items: center;
 }
 
 .project-title {
@@ -123,45 +125,12 @@ p {
 }
 
 .projects {
-	grid-column-start: 2;
-}
-
-.project-cards {
-	display: flex;
+    display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	grid-row-start: 2;
-	margin: 1em 1em;
-    max-width: 975px;
-}
-
-.card1,
-.card2,
-.card3,
-.card4 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 400px;
-	text-align: center;
-	margin: 0.75em 0;
-}
-
-.card1 h4,
-.card2 h4,
-.card3 h4,
-.card4 h4 {
-	margin: 0.5em 0;
-	color: #565657;
-}
-
-.p1 {
-	height: 125px;
-	object-fit: cover;
-	grid-column-start: 2;
-	box-shadow: 2px 3px 8px;
-	border-radius: 8px;
-	margin: 0.5em 2em;
+    grid-column-start: 2;
+	margin: 1em 2em;
 }
 
 .contact {
@@ -199,24 +168,184 @@ p {
 	margin: 0 0.5em;
 }
 
+
 /* Media queries */
-@media all and (max-width: 1115px) and (min-width: 500px) {
-    .about {
-        height: 700px;
+@media all and (max-width: 600px) and (min-width: 300px) {
+	.developer, .engineer {
+		padding-top: 4em;
+	}
+	
+	.developer h1, .engineer h1 {
+		font-size: 22px;
+	}
+
+	.developer p, .engineer p {
+		font-size: 14px;
+	}
+	
+	.about {
+		height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: space-between;
-    }
+		padding: 2em 0;
+		margin: 2em 0;
+	}
 
-    .text {
-        width: 100%;
-        margin: 1em 2em;
-    }
+	.text {
+		width: auto;
+	}
 
-    .text p {
-        margin: 0 4em;
-    }
+	.text h1 {
+		font-size: 22px;
+	}
 
-    
+	.text h3 {
+		font-size: 16px;
+	}
+
+	.text p {
+		font-size: 12px;
+	}
+
+	.family-pic {
+		width: 300px;
+		height: auto;
+	}
+
+	.tech {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.icons {
+		height: auto;
+		display: flex;
+		justify-content: center;
+		margin: 0 0 1.5em 0;
+	}
+
+	.project-title, .tech-title {
+		margin: 1em auto 0 auto;
+		font-size: 24px;
+	}
+
+	.projects {
+		margin: 0 auto;
+	}
+
+	.contact {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contactform {
+		width: auto;
+		margin: 0 0 2em 0;
+	}
+
+	.collaborate {
+		align-items: center;
+	}
+
+	.text h1, .contactform h1, .collaborate h1 {
+		font-size: 24px;
+		margin: .5em 0 0 0;
+		text-align: center;
+		
+	}
+
+}
+
+@media all and (max-width: 1200px) and (min-width: 600px) {
+	.developer, .engineer {
+		padding-top: 4em;
+	}
+	
+	.developer h1, .engineer h1 {
+		font-size: 22px;
+	}
+
+	.developer p, .engineer p {
+		font-size: 14px;
+	}
+	
+	.about {
+		height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+		padding: 2em 0;
+		margin: 2em 0;
+	}
+
+	.text {
+		width: auto;
+	}
+
+	.text h1 {
+		font-size: 22px;
+	}
+
+	.text h3 {
+		font-size: 16px;
+	}
+
+	.text p {
+		font-size: 12px;
+	}
+
+	.family-pic {
+		width: 300px;
+		height: auto;
+	}
+
+	.tech {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.icons {
+		height: auto;
+		display: flex;
+		justify-content: center;
+		margin: 0 0 1.5em 0;
+	}
+
+	.project-title, .tech-title {
+		margin: 1em auto 0 auto;
+		font-size: 24px;
+	}
+
+	.projects {
+		margin: 0 auto;
+	}
+
+	.contact {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contactform {
+		width: auto;
+		margin: 0 0 2em 0;
+	}
+
+	.collaborate {
+		align-items: center;
+	}
+
+	.text h1, .contactform h1, .collaborate h1 {
+		font-size: 24px;
+		margin: .5em 0 0 0;
+		text-align: center;
+		
+	}
+
 }

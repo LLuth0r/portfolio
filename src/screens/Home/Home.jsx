@@ -30,7 +30,7 @@ export default function Home() {
 					<h1>Developer</h1>
 					<p>
 						Full-stack developer focused on creating <br />
-						beautiful, clean and organized web applications.
+						innovative, clean and organized web applications.
 					</p>
 				</div>
 				<div className="engineer">
@@ -67,7 +67,7 @@ export default function Home() {
 				</div>
 			</Paper>
 			<Paper className="tech" elevation={3}>
-				<h1 className="tech-title">Technologies</h1>
+				<h1 className="tech-title">technologies</h1>
 				<div className="icons">
 					<IconContext.Provider
 						value={{ size: "2.5em", className: "tech-icons" }}
@@ -82,23 +82,21 @@ export default function Home() {
 						<SiNetlify />
 					</IconContext.Provider>
 				</div>
-				<h1 className="project-title">Projects</h1>
-				<div className="projects">
-					<div className="project-cards">
+				<h1 className="project-title">projects</h1>
+				<div className="projects">			
                         <Card1 />
 						<Card2 />
 						<Card3 />
-						<Card4 />
-					</div>
+						<Card4 />					
 				</div>
 			</Paper>
 			<Paper className="contact" elevation={10}>
 				<div className="contactform">
-					<h1>Send me an email</h1>
+					<h1>send me an email</h1>
 					<ContactForm />
 				</div>
 				<div className="collaborate">
-					<h1>Interested in hiring me?</h1>
+					<h1>interested in hiring me?</h1>
                     <ResumeCard />
 				</div>
 			</Paper>
