@@ -29,14 +29,14 @@ export default function Home() {
 				<div className="developer">
 					<h1>Developer</h1>
 					<p>
-						Full-stack developer focused on creating <br />
+						Full-stack developer focused on creating 
 						innovative, clean and organized web applications.
 					</p>
 				</div>
 				<div className="engineer">
 					<h1>Engineer</h1>
 					<p>
-						Mechanical/Design engineer with 15 years <br />
+						Mechanical/Design engineer with 15 years 
 						of product development & design experience.
 					</p>
 				</div>

@@ -10,7 +10,7 @@ import "../Card1/Card1.css";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
-	root: {
+	card4: {
 		maxWidth: 300,
 		maxHeight: 250,
 		margin: ".5em .5em",
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 		height: 125,
 	},
 	"@media (max-width: 1000px)": {
-		root: {
+		card4: {
 			maxWidth: 200,
 			maxHeight: 200,
 		},
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 		},
 	},
 	'@media (max-width:825px)': {
-		root: {
+		card4: {
 			maxWidth: 200,
 			maxHeight: 200,
 		},
@@ -65,7 +65,7 @@ export default function Card4() {
 	const classes = useStyles();
 
 	return (
-		<Card className={classes.root}>
+		<Card className={classes.card4}>
 			<a href="https://the-cellar.netlify.app" target="_blank" rel="noreferrer">
 				<CardActionArea>
 					<CardMedia className={classes.media} image={P4} title="The Cellar" />

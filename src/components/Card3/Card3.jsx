@@ -10,7 +10,7 @@ import "../Card1/Card1.css";
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
-	root: {
+	card3: {
 		maxWidth: 300,
 		maxHeight: 250,
 		margin: ".5em .5em",
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 		height: 125,
 	},
 	"@media (max-width: 1000px)": {
-		root: {
+		card3: {
 			maxWidth: 200,
 			maxHeight: 200,
 		},
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 		},
 	},
 	'@media (max-width:825px)': {
-		root: {
+		card3: {
 			maxWidth: 200,
 			maxHeight: 200,
 		},
@@ -65,7 +65,7 @@ export default function Card3() {
 
 
 	return (
-		<Card className={classes.root}>
+		<Card className={classes.card3}>
 			<a href="https://geosmin.netlify.app/" target="_blank" rel='noreferrer'>
 				<CardActionArea>
 					<CardMedia className={classes.media} image={P3} title="Geosmin" />

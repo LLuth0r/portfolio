@@ -10,31 +10,18 @@ body {
 	align-items: center;
 }
 
-.developer {
+.developer, .engineer {
 	align-self: center;
-	width: 400px;
-	margin: 5em 8% 0 8%;
+	width: auto;
+	margin: 5em 6% 0 6%;
 	text-align: center;
 	z-index: 1;
 	color: white;
 }
 
-.developer p {
+.developer p, .engineer p {
 	color: white;
-}
-
-.engineer {
-	align-self: center;
-	width: 400px;
-	margin: 5em 8% 0 8%;
-	text-align: center;
-	z-index: 1;
-	color: white;
-}
-
-.engineer p {
-	color: white;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+	height: 75px;
 }
 
 .hero {
@@ -75,7 +62,6 @@ p {
 
 .family {
 	grid-column-start: 2;
-	/* margin: 0 100px 0 0; */
 }
 
 .family-pic {
@@ -94,7 +80,7 @@ p {
 }
 
 .tech-icons {
-	margin: 0 1em;
+	margin: .5em 1em;
 }
 
 .tech-title {
@@ -173,6 +159,7 @@ p {
 @media all and (max-width: 600px) and (min-width: 300px) {
 	.developer, .engineer {
 		padding-top: 4em;
+		margin: 5em 2% 0 2%;
 	}
 	
 	.developer h1, .engineer h1 {
@@ -181,6 +168,7 @@ p {
 
 	.developer p, .engineer p {
 		font-size: 14px;
+		margin: 0;
 	}
 	
 	.about {

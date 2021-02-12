@@ -10,7 +10,7 @@ import "../Card1/Card1.css";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
-	root: {
+	card2: {
 		maxWidth: 300,
 		maxHeight: 250,
 		margin: ".5em .5em",
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 		height: 125,
 	},
 	"@media (max-width: 1000px)": {
-		root: {
+		card2: {
 			maxWidth: 200,
 			maxHeight: 200,
 		},
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 		},
 	},
 	'@media (max-width:825px)': {
-		root: {
+		card2: {
 			maxWidth: 200,
 			maxHeight: 200,
 		},
@@ -64,7 +64,7 @@ export default function Card2() {
 	const classes = useStyles();
 
 	return (
-		<Card className={classes.root}>
+		<Card className={classes.card2}>
 			<a
 				href="https://vacation-funds.netlify.app"
 				target="_blank"

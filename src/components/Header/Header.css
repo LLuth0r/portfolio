@@ -1,90 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 
 .navbar {
-    top:0;
-    height: 75px;
-    width: 100%;
-    max-width: 1425px;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    position: fixed;
-    z-index: 3;
+	top: 0;
+	height: 75px;
+	width: 100%;
+	max-width: 1425px;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 30% 70%;
+	position: fixed;
+	z-index: 3;
 }
 
 .logo {
-    height: 85px;
-    width: auto;
-    font-family: 'Unica One', cursive;
-    font-size: 55px;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 1em;
-    
+	height: 85px;
+	width: auto;
+	font-family: "Unica One", cursive;
+	font-size: 55px;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 1em;
 }
 
 .logo a {
-    text-decoration: none;
-    color: white;
-    align-self: center;
+	text-decoration: none;
+	color: white;
+	align-self: center;
 }
 
 .logo a:hover {
-    color:grey;
-    cursor: pointer;
+	color: grey;
+	cursor: pointer;
 }
-
 
 .links {
-    grid-column-start: 2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 85px;
-    width: 100%;
-    }
+	grid-column-start: 2;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 85px;
+	width: 100%;
+}
 
 .links a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 
-.links a:hover{
-    color: grey;
-    cursor: pointer;
+.links a:hover {
+	color: grey;
+	cursor: pointer;
 }
 
-.nav-about, .nav-projects, .nav-contact, .linkedin-icon, .git-icon {
-    margin: 0 2em;
+.nav-about,
+.nav-projects,
+.nav-contact,
+.linkedin-icon,
+.git-icon {
+	margin: 0 2em;
 }
-
 
 /* Media queries */
 @media all and (max-width: 600px) and (min-width: 300px) {
-    .logo {
-        font-size: 26px;
-        margin: 0 .5em;
-    }
+	.logo {
+		font-size: 26px;
+		margin: 0 0.5em;
+	}
 
-    .link {
-        margin: auto;
-    }
+	.link {
+		margin: auto;
+	}
 
-    .nav-about, .nav-projects, .nav-contact {
-        font-size: 11px;
-    }
+	.nav-about,
+	.nav-projects,
+	.nav-contact {
+		font-size: 12px;
+	}
 
-    .nav-about, .nav-projects, .nav-contact, .linkedin-icon, .git-icon {
-        margin: 0 .5em;
-    }
+	.nav-about,
+	.nav-projects,
+	.nav-contact,
+	.linkedin-icon,
+	.git-icon {
+		margin: 0 0.5em;
+	}
 }
 
 @media all and (max-width: 900px) and (min-width: 600px) {
 	.logo {
-        font-size: 30px;
-    }
+		font-size: 44px;
+		margin: 0 0.5em;
+	}
 
-    .link {
-        margin:auto;
-    }
+	.link {
+		margin: auto;
+	}
+
+	.nav-about,
+	.nav-projects,
+	.nav-contact {
+		font-size: 16px;
+	}
+
+	.nav-about,
+	.nav-projects,
+	.nav-contact,
+	.linkedin-icon,
+	.git-icon {
+		margin: 0 0.5em;
+	}
 }
