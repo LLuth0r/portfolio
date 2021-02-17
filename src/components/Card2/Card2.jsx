@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 		maxHeight: 250,
 		margin: ".5em .5em",
 	},
-	media: {
+	media2: {
 		height: 125,
 	},
 	"@media (max-width: 1000px)": {
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 			maxWidth: 200,
 			maxHeight: 200,
 		},
-		media: {
+		media2: {
 			height: 75,
 		},
 	},
@@ -32,15 +32,15 @@ const useStyles = makeStyles({
 			maxWidth: 200,
 			maxHeight: 200,
 		},
-		media: {
+		media2: {
 			height: 70,
 		},
 	}
 });
 
-const theme = createMuiTheme();
+const theme2 = createMuiTheme();
 
-theme.typography.h5 = {
+theme2.typography.h5 = {
 	fontSize: "1.2rem",
 	"@media (max-width:900px)": {
 		fontSize: "1.25rem",
@@ -50,7 +50,7 @@ theme.typography.h5 = {
 	}
 };
 
-theme.typography.body2 = {
+theme2.typography.body2 = {
 	fontSize: ".85rem",
 	"@media (max-width:900px)": {
 		fontSize: ".75rem",
@@ -71,9 +71,9 @@ export default function Card2() {
 				rel="noreferrer"
 			>
 				<CardActionArea>
-					<CardMedia className={classes.media} image={P2} title="Make Cent$" />
+					<CardMedia className={classes.media2} image={P2} title="Make Cent$" />
 					<CardContent>
-						<ThemeProvider theme={theme}>
+						<ThemeProvider theme={theme2}>
 							<Typography gutterBottom variant="h5" component="h2">
 								Make Cent$
 							</Typography>

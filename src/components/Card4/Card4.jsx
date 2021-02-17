@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 		maxHeight: 250,
 		margin: ".5em .5em",
 	},
-	media: {
+	media4: {
 		height: 125,
 	},
 	"@media (max-width: 1000px)": {
@@ -23,54 +23,47 @@ const useStyles = makeStyles({
 			maxWidth: 200,
 			maxHeight: 200,
 		},
-		media: {
+		media4: {
 			height: 75,
 		},
 	},
-	'@media (max-width:825px)': {
+	"@media (max-width:825px)": {
 		card4: {
 			maxWidth: 200,
 			maxHeight: 200,
 		},
-		media: {
+		media4: {
 			height: 70,
 		},
-	}
+	},
 });
-
-const theme = createMuiTheme();
-
-theme.typography.h5 = {
-	fontSize: "1.2rem",
-	"@media (max-width:900px)": {
-		fontSize: "1.25rem",
-	},
-	'@media (max-width:600px)': {
-		fontSize: '.75rem',
-	}
-};
-
-theme.typography.body2 = {
-	fontSize: ".85rem",
-	"@media (max-width:900px)": {
-		fontSize: ".75rem",
-	},
-	'@media (max-width:600px)': {
-		fontSize: '.6rem',
-	}
-};
-
 
 export default function Card4() {
 	const classes = useStyles();
+
+	const theme4 = createMuiTheme();
+
+	theme4.typography.h5 = {
+		fontSize: 18,
+		"@media (max-width:600px)": {
+			fontSize: 16,
+		},
+	};
+
+	theme4.typography.body2 = {
+		fontSize: 12,
+		"@media (max-width:600px)": {
+			fontSize: 10,
+		},
+	};
 
 	return (
 		<Card className={classes.card4}>
 			<a href="https://the-cellar.netlify.app" target="_blank" rel="noreferrer">
 				<CardActionArea>
-					<CardMedia className={classes.media} image={P4} title="The Cellar" />
+					<CardMedia className={classes.media4} image={P4} title="The Cellar" />
 					<CardContent>
-						<ThemeProvider theme={theme}>
+						<ThemeProvider theme={theme4}>
 							<Typography gutterBottom variant="h5" component="h2">
 								The Cellar
 							</Typography>

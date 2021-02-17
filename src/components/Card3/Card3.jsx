@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 		maxHeight: 250,
 		margin: ".5em .5em",
 	},
-	media: {
+	media3: {
 		height: 125,
 	},
 	"@media (max-width: 1000px)": {
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 			maxWidth: 200,
 			maxHeight: 200,
 		},
-		media: {
+		media3: {
 			height: 75,
 		},
 	},
@@ -32,15 +32,15 @@ const useStyles = makeStyles({
 			maxWidth: 200,
 			maxHeight: 200,
 		},
-		media: {
+		media3: {
 			height: 70,
 		},
 	}
 });
 
-const theme = createMuiTheme();
+const theme3 = createMuiTheme();
 
-theme.typography.h5 = {
+theme3.typography.h5 = {
 	fontSize: "1.2rem",
 	"@media (max-width:900px)": {
 		fontSize: "1.25rem",
@@ -50,7 +50,7 @@ theme.typography.h5 = {
 	}
 };
 
-theme.typography.body2 = {
+theme3.typography.body2 = {
 	fontSize: ".85rem",
 	"@media (max-width:900px)": {
 		fontSize: ".75rem",
@@ -68,9 +68,9 @@ export default function Card3() {
 		<Card className={classes.card3}>
 			<a href="https://geosmin.netlify.app/" target="_blank" rel='noreferrer'>
 				<CardActionArea>
-					<CardMedia className={classes.media} image={P3} title="Geosmin" />
+					<CardMedia className={classes.media3} image={P3} title="Geosmin" />
 					<CardContent>
-						<ThemeProvider theme={theme}>
+						<ThemeProvider theme={theme3}>
 						<Typography gutterBottom variant="h5" component="h2">
 							Geosmin
 						</Typography>

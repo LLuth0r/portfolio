@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 		maxHeight: 250,
 		margin: ".5em .5em",
 	},
-	media: {
+	media1: {
 		height: 125,
 	},
 	"@media (max-width: 1000px)": {
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 			maxWidth: 200,
 			maxHeight: 200,
 		},
-		media: {
+		media1: {
 			height: 75,
 		},
 	},
@@ -32,15 +32,15 @@ const useStyles = makeStyles({
 			maxWidth: 200,
 			maxHeight: 200,
 		},
-		media: {
+		media1: {
 			height: 70,
 		},
 	}
 });
 
-const theme = createMuiTheme();
+const theme1 = createMuiTheme();
 
-theme.typography.h5 = {
+theme1.typography.h5 = {
 	fontSize: "1.2rem",
 	"@media (max-width:900px)": {
 		fontSize: "1.25rem",
@@ -50,7 +50,7 @@ theme.typography.h5 = {
 	}
 };
 
-theme.typography.body2 = {
+theme1.typography.body2 = {
 	fontSize: ".85rem",
 	"@media (max-width:900px)": {
 		fontSize: ".75rem",
@@ -72,12 +72,12 @@ export default function Card1() {
 			>
 				<CardActionArea>
 					<CardMedia
-						className={classes.media}
+						className={classes.media1}
 						image={P1}
 						title="Heroes & Villains"
 					/>
 					<CardContent>
-						<ThemeProvider theme={theme}>
+						<ThemeProvider theme={theme1}>
 							<Typography gutterBottom variant="h5" component="h2">
 								Heroes & Villains
 							</Typography>
