@@ -13,12 +13,14 @@ import { SiHeroku } from "react-icons/si";
 import { SiMaterialUi } from "react-icons/si";
 import { SiNetlify } from "react-icons/si";
 import { FaRegCopyright } from 'react-icons/fa';
+import { FaCloudDownloadAlt } from 'react-icons/fa';
 import Card1 from '../../components/Card1/Card1';
 import Card2 from '../../components/Card2/Card2';
 import Card3 from '../../components/Card3/Card3';
 import Card4 from '../../components/Card4/Card4';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import ResumeCard from '../../components/ResumeCard/ResumeCard';
+import Resume from "./michael_pakulak_updated.pdf";
 
 
 export default function Home() {
@@ -40,7 +42,7 @@ export default function Home() {
 						of product development & design experience.
 					</p>
 				</div>
-				<img className="hero" src={'https://w.wallhaven.cc/full/nm/wallhaven-nm2e5m.jpg'} alt="" />
+				<img className="hero" src={'https://w.wallhaven.cc/full/96/wallhaven-966lk8.jpg'} alt="" />
 			</Paper>
 			<Paper className="about" elevation={3}>
 				<div className="text">
@@ -95,14 +97,22 @@ export default function Home() {
 					<h1>Send Me an Email</h1>
 					<ContactForm />
 				</div>
-				<div className="collaborate">
-					<h1>Interested in Hiring Me?</h1>
-                    <ResumeCard />
-				</div>
 			</Paper>
             <div className='footer'>
+				<div>
                 <FaRegCopyright />
                 <h7 className='footer-text'>2021 Mike Pakulak</h7>
+				</div>
+				<div>
+					<h7 className='hire-me'>Interested in Hiring Me?</h7>
+					<a href={Resume} target="_blank" rel='noreferrer'>
+					<IconContext.Provider
+						value={{ size: "1.25em" }}
+					>
+						<FaCloudDownloadAlt />
+						</IconContext.Provider>
+					</a>
+				</div>
             </div>
 		</div>
 	);

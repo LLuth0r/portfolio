@@ -76,7 +76,7 @@ const ContactUsForm = () => {
 			);
 		} else {
 			return (
-				<Button type="submit" className="CU-button" id='submit-button' variant="contained">
+				<Button type="submit" className="CU-button" id='submit-button' variant="outlined" color="secondary">
 					Submit
 				</Button>
 			);
