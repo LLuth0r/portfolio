@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@500&display=swap');
+
 body {
 	background-color: #f0f2f3;
+	/* background-color: #4a4a4a; */
+}
+
+body h1, h3 {
+	font-family: 'Orbitron', sans-serif;
 }
 
 .home-paper {
@@ -13,20 +20,26 @@ body {
 .developer, .engineer {
 	align-self: center;
 	width: auto;
-	margin: 5em 6% 0 6%;
+	margin: -7em 6% 0 6%;
 	text-align: center;
 	z-index: 1;
 	color: white;
 }
 
+.developer h1, .engineer h1 {
+	font-family: 'Orbitron', sans-serif;
+}
+
 .developer p, .engineer p {
 	color: white;
 	height: 75px;
+	padding: 0 5em;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .hero {
 	width: 100%;
-	max-width: 1425px;
+	max-width: 1800px;
 	height: 600px;
 	object-fit: cover;
 	position: absolute;
@@ -50,14 +63,19 @@ body {
 	margin: 0 20px;
 }
 
+.text h3 {
+	color: #7eb8da;
+}
+
 .text h3,
 p {
-	color: #565657;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .text p {
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 1.5em;
+	color: #565657;
 }
 
 .family {
