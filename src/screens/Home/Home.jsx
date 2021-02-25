@@ -74,7 +74,7 @@ export default function Home() {
 						<Card3 />
 						<Card4 />					
 				</div>
-				<h1 className="tech-title">Technologies</h1>
+				<h1 className="icon-title">Technologies</h1>
 				<div className="icons">
 					<IconContext.Provider
 						value={{ size: "2.5em", className: "tech-icons" }}
