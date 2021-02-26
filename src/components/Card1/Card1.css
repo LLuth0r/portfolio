@@ -8,7 +8,7 @@ a {
     height: 280px;
     width: 200px;
     border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem .25rem .75rem #000;
     /* margin-left: -50px; */
     transition: 0.4s ease-out;
     position: relative;
@@ -26,7 +26,7 @@ a {
   
   .card:hover ~ .card {
     position: relative;
-    left: 50px;
+    left: 60px;
     transition: 0.4s ease-out;
   }
   
