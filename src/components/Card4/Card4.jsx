@@ -11,6 +11,7 @@ export default function Card4() {
 				The Cellar is a wine lovers bartering app. Users can list their personal
 				wine collections for bartering.
 			</div>
+			<div className='git-link'><a href='https://github.com/LLuth0r/The-Cellar'>Github</a></div>
 		</div>
 	);
 }

@@ -8,6 +8,7 @@ export default function Card2() {
 			<img className="card2-img" src={P2} alt="" />
 			<h3 class="title"><a class='title-link'href='https://vacation-funds.netlify.app'>Vacation Fund$</a></h3>
 			<div className="card-desc">Vacation Fund$ is a budgeting application to help the user find extra spending money.  Utilizes Airtable & React. </div>
+			<div className='git-link'><a href='https://github.com/LLuth0r/Make-Cents'>Github</a></div>
 		</div>
 	);
 }

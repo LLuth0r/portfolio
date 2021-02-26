@@ -11,6 +11,7 @@ export default function Card3() {
 				Geosmin is a gourmet mushroom and microgreen urban farm store built with
 				MERN stack.
 			</div>
+			<div className='git-link'><a href='https://github.com/jeri-dilts/geosmin'>Github</a></div>
 		</div>
 	);
 }
