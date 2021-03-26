@@ -14,13 +14,11 @@ import { SiMaterialUi } from "react-icons/si";
 import { SiNetlify } from "react-icons/si";
 import { FaRegCopyright } from 'react-icons/fa';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
-import Card1 from '../../components/Card1/Card1';
 import Card2 from '../../components/Card2/Card2';
 import Card3 from '../../components/Card3/Card3';
 import Card4 from '../../components/Card4/Card4';
 import ContactForm from '../../components/ContactForm/ContactForm';
-import ResumeCard from '../../components/ResumeCard/ResumeCard';
-import Resume from "./michael_pakulak_updated.pdf";
+import Resume from "./michael pakulak.pdf";
 
 
 export default function Home() {
@@ -42,7 +40,7 @@ export default function Home() {
 						of product development & design experience.
 					</p>
 				</div>
-				<img className="hero" src={'https://w.wallhaven.cc/full/96/wallhaven-966lk8.jpg'} alt="" />
+				<img className="hero" src={'https://images.unsplash.com/photo-1541185934-01b600ea069c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'} alt="" />
 			</Paper>
 			<Paper className="about" elevation={3}>
 				<div className="text">
@@ -71,7 +69,6 @@ export default function Home() {
 			<Paper className="tech" elevation={3}>
 				<h1 className="project-title">Projects</h1>
 				<div className="projects">			
-                        <Card1 />
 						<Card2 />
 						<Card3 />
 						<Card4 />					
