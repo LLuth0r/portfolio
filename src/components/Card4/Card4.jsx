@@ -17,7 +17,7 @@ export default function Card4() {
 			<div className='card-desc'>
 				Beacon Interactive is a DoD contractor supplying software based solutions for the Army, Navy, Airforce & Secretary of Defense.
 				I worked on a web application utilizing Angular/Typescript/Ruby on Rails building custom features and components, streamlining
-				SQL queries and 
+				SQL queries and database efficiency.
 			</div>
 			<div className='git-link'></div>
 		</div>
