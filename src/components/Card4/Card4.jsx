@@ -1,17 +1,25 @@
-import React from "react";
-import P4 from "./P4.png";
-import "../Card1/Card1.css";
+import React from 'react';
+import Beacon from './Beacon-Logo.png';
+import '../Card1/Card1.css';
 
 export default function Card4() {
 	return (
-		<div class="card">
-			<img className="card4-img" src={P4} alt="" />
-			<h3 class="title"><a class='title-link'href='https://the-cellar.netlify.app'>The Cellar</a></h3>
-			<div class="card-desc">
-				The Cellar is a wine lovers bartering app. Users can list their personal
-				wine collections for bartering.
+		<div className='card'>
+			<img className='card4-img' 
+					 src={Beacon} 
+					 alt='Beacon-Logo' />
+			<h3 className='title'>
+				<a className='title-link'
+				   href='https://www.beaconinteractive.com/'>
+					Beacon Interactive Systems
+				</a>
+			</h3>
+			<div className='card-desc'>
+				Beacon Interactive is a DoD contractor supplying software based solutions for the Army, Navy, Airforce & Secretary of Defense.
+				I worked on a web application utilizing Angular/Typescript/Ruby on Rails building custom features and components, streamlining
+				SQL queries and 
 			</div>
-			<div className='git-link'><a href='https://github.com/LLuth0r/The-Cellar'>Github</a></div>
+			<div className='git-link'></div>
 		</div>
 	);
 }

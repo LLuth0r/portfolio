@@ -110,13 +110,13 @@ p {
 }
 
 .projects {
-    display: flex;
+  display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	grid-row-start: 2;
-    grid-column-start: 1;
+  grid-column-start: 1;
 	margin: 3em auto;
-	max-width: 775px;
+	max-width: 1200px;
 }
 
 .icon-title {

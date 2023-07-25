@@ -3,7 +3,6 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import "./ContactForm.css";
 import * as emailjs from "emailjs-com";
-import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -21,9 +20,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ContactUsForm = () => {
-	const classes = useStyles();
-
-	const history = useHistory();
 	const [form, setForm] = useState({
 		from_name: "",
 		from_email: "",
@@ -64,19 +60,25 @@ const ContactUsForm = () => {
             message: '',
         });
         scroll.scrollToTop();
+				console.log(form);
     };
 
 	const renderError = () => {
 		const toggleForm = form.isError ? "danger" : "";
 		if (form.isError) {
 			return (
-				<Button type="submit" className={toggleForm} variant="contained">
+				<Button type="submit" 
+								className={toggleForm} 
+								variant="contained">
 					{form.errorMsg}
 				</Button>
 			);
 		} else {
 			return (
-				<Button type="submit" className="CU-button" id='submit-button' variant="outlined" >
+				<Button type="submit" 
+								className="CU-button" 
+								id='submit-button' 
+								variant="outlined" >
 					Submit
 				</Button>
 			);
@@ -116,7 +118,7 @@ const ContactUsForm = () => {
 					value={message}
 					className="textfield"
 					label="Message"
-					rows={6}
+					minRows={6}
 					variant="outlined"
 				/>
 				{renderError()}

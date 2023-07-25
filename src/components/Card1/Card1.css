@@ -5,10 +5,11 @@ a {
   
   .card {
     display: flex;
-    height: 280px;
-    width: 200px;
+    height: 380px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: -1rem .25rem .75rem #000;
+    background-color: white;
     /* margin-left: -50px; */
     transition: 0.4s ease-out;
     position: relative;
@@ -30,11 +31,19 @@ a {
     transition: 0.4s ease-out;
   }
   
-  .card1-img, .card2-img, .card3-img, .card4-img {
-      height: 280px;
-      width: 200px;
+  .card-img {
+      height: 380px;
+      width: 300px;
       object-fit: cover;
       border-radius: 10px;
+  }
+
+  .card3-img, .card4-img {
+    height: auto;
+    width: 240px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: auto;
   }
 
   .title-link {
@@ -48,7 +57,7 @@ a {
   .title {
     background-color: #292929e7;
     color: white;
-    width: 180px;
+    width: 280px;
     padding: 10px;
     position: absolute;
     margin-top: 0px;
@@ -62,8 +71,8 @@ a {
   }
 
   .card-desc {
-    background-color: rgba(255, 255, 255, 0.85);
-    width: 170px;
+    background-color: rgba(255, 255, 255, 0.70);
+    width: 270px;
     margin: 0 5px;
     top: 100px;
     padding: 10px;
@@ -75,7 +84,8 @@ a {
   .git-link {
     background-color: #292929e7;
     color: white;
-    width: 200px;
+    width: 290px;
+    height: 20px;
     border-radius: 0 0 10px 10px;
     bottom: 0px;
     padding: 5px;

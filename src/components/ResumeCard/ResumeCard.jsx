@@ -6,7 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import Typography from "@material-ui/core/Typography";
 import ResumeSnap from "./ResumeSnap.png";
-import Resume from "./michael_pakulak_updated.pdf";
+import Resume from "./michael-pakulak-compressed.pdf";
 
 const useStyles = makeStyles({
 	resume: {
