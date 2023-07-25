@@ -4,18 +4,10 @@ import { Link } from 'react-scroll';
 import { FiLinkedin } from 'react-icons/fi';
 import { FiGithub } from 'react-icons/fi';
 import { IconContext } from 'react-icons';
-import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
-    '@media (max-width: 600px)': {
-        icons: {
-            size: '1em',
-        },
-    },    
-})
+
 
 export default function Header() {
-    const classes = useStyles();
 
     return (
         <div className='navbar'>

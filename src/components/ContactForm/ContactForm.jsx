@@ -1,23 +1,10 @@
 import React, { useState } from 'react';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import './ContactForm.css';
-import * as emailjs from 'emailjs-com';
-import { makeStyles } from '@material-ui/core/styles';
+import emailjs from '@emailjs/browser';
 import { animateScroll as scroll } from 'react-scroll';
 
-
-const useStyles = makeStyles((theme) => ({
-	button: {
-		margin: theme.spacing(1),
-		width: '10em',
-		alignSelf: 'center',
-	},
-	email: {
-		margin: '.5em',
-		width: '450px',
-	},
-}));
 
 const ContactUsForm = () => {
 	const [form, setForm] = useState({

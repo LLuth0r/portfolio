@@ -1,7 +1,6 @@
 import React from 'react';
-import Paper from '@material-ui/core/Paper';
+import Paper from '@mui/material/Paper';
 import './Home.css';
-import Hero1 from './hero-image1.jpg';
 import Family from './family-pic.jpg';
 
 //Cards for cards section
