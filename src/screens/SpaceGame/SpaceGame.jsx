@@ -93,6 +93,7 @@ export default function SpaceGame() {
         { text: "I love space exploration! Event went to space camp as a kid.", image: images.nasa },
         { text: "In my former life I was a mechanical engineer.", image: images.car },
         { text: "Superman is my favorite superhero!", image: images.superman },
+        { text: "My wife is my best friend!", image: images.wife },
       ],
       asteroid: [
         { text: "My favorite season is fall", image: images.fall },
