@@ -5,12 +5,12 @@ a {
   
   .card {
     display: flex;
+    justify-content: center;
     height: 380px;
     width: 300px;
     border-radius: 10px;
     box-shadow: -1rem .25rem .75rem #000;
     background-color: white;
-    /* margin-left: -50px; */
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
@@ -32,19 +32,24 @@ a {
   }
   
   .card-img {
-      height: 380px;
-      width: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-  }
-
-  .card3-img, .card4-img {
-    height: auto;
-    width: 240px;
+    height: 120px;
+    width: 140px;
     object-fit: contain;
     border-radius: 10px;
-    margin: auto;
+    top: 240px; 
+    position: absolute;
   }
+
+  .card5 {
+    width: 100px;
+    top: 265px;
+  }
+
+  .card6 {
+    top: 275px;
+    width: 200px;
+  }
+
 
   .title-link {
     color: white;
@@ -71,10 +76,12 @@ a {
   }
 
   .card-desc {
-    background-color: rgba(255, 255, 255, 0.70);
+    background-color: rgba(255, 255, 255, 0.80);
+    display: flex;
+    align-self: flex-start;
+    top: 60px;
     width: 270px;
     margin: 0 5px;
-    top: 100px;
     padding: 10px;
     position: absolute;
     font-size: 14px;

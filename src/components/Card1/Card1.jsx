@@ -1,12 +1,12 @@
-import React from "react";
 import P1 from "./P1.png";
+import GALogo from "./generalassembly-logo.webp"
 import "./Card1.css";
 
 export default function Card1() {
 	return (
 		<div className="card">
 			<img className="card-img" 
-					 src={P1} 
+					 src={GALogo}
 					 alt="General Assembly Project" />
 			<h3 className="title">
 				<a className='title-link'

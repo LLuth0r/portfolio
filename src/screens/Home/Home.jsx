@@ -1,4 +1,3 @@
-import React from 'react';
 import Paper from '@mui/material/Paper';
 import './Home.css';
 import Family from './family-pic.jpg';
@@ -8,6 +7,8 @@ import Card1 from '../../components/Card1/Card1';
 import Card2 from '../../components/Card2/Card2';
 import Card3 from '../../components/Card3/Card3';
 import Card4 from '../../components/Card4/Card4';
+import Card5 from '../../components/Card5/Card5';
+import Card6 from '../../components/Card6/Card6';
 
 import { IconContext } from 'react-icons';
 import { FaReact } from 'react-icons/fa';
@@ -25,7 +26,7 @@ import { SiTypescript } from 'react-icons/si';
 import { SiPostgresql } from 'react-icons/si';
 import { SiDocker } from 'react-icons/si';
 import ContactForm from '../../components/ContactForm/ContactForm';
-import Resume from './michael-pakulak-compressed.pdf';
+import Resume from './Michael_Pakulak_Resume_2025.pdf';
 
 
 export default function Home() {
@@ -77,6 +78,8 @@ export default function Home() {
 					<Card2 />
 					<Card3 />
 					<Card4 />
+          <Card5 />
+          <Card6 />
 				</div>
 				<h1 className='icon-title'>Technologies</h1>
 				<div className='icons'>
@@ -105,7 +108,7 @@ export default function Home() {
       <div className='footer'>
 				<div>
           <FaRegCopyright />
-          <span className='footer-text'>2023 Mike Pakulak</span>
+          <span className='footer-text'>2025 Mike Pakulak</span>
 				</div>
 				<div>
 					<span className='hire-me'>Interested in Hiring Me?</span>

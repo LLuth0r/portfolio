@@ -1,11 +1,10 @@
-import React from 'react';
 import Recruitful from './Recruitful-Logo.png';
 import '../Card1/Card1.css';
 
 export default function Card3() {
 	return (
 		<div className='card'>
-			<img className='card3-img' 
+			<img className='card-img' 
 					 src={Recruitful} 
 					 alt='Recruitful-Logo' />
 			<h3 className='title'>

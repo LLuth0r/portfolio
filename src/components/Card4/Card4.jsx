@@ -1,11 +1,10 @@
-import React from 'react';
 import Beacon from './Beacon-Logo.png';
 import '../Card1/Card1.css';
 
 export default function Card4() {
 	return (
 		<div className='card'>
-			<img className='card4-img' 
+			<img className='card-img' 
 					 src={Beacon} 
 					 alt='Beacon-Logo' />
 			<h3 className='title'>

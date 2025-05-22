@@ -1,12 +1,12 @@
-import React from 'react';
 import '../Card1/Card1.css';
 import Rugiet_Men from './Rugiet_Men.jpg';
+import MSBLogo from './msbholdings-logo.png';
 
 export default function Card2() {
 	return (
 		<div className='card'>
 			<img className='card-img' 
-					 src={Rugiet_Men} 
+					 src={MSBLogo} 
 					 alt='Rugiet-Men' />
 			<h3 className='title'>
 				<a className='title-link'
