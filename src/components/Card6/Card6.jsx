@@ -14,11 +14,11 @@ export default function Card6() {
 				</a>
 			</h3>
 			<div className='card-desc'>
-				DriverReach is a company that provides a recruiting and compliance management system for the transportation 
-        and trucking industry. It helps carriers attract, hire, and retain CDL drivers, and manage ongoing compliance 
-        and regulatory requirements.  My role there as a Site Reliability Engineer (SRE) was to ensure the reliability,
+				DriverReach was a company that provided a recruiting and compliance management system for the transportation 
+        and trucking industry. My role there as a Site Reliability Engineer (SRE) was to ensure the reliability,
         availability, and performance of their systems and applications. I was working on upgrading the technical stack
-        to a newer version of Ruby as well as preparing for an upgrade to a newer version of Rails.
+        to a newer version of Ruby as well as preparing for an upgrade to a newer version of Rails.  DriverReach was 
+        acquired by Tenstreet in 2025.
 			</div>
 			<div className='git-link'></div>
 		</div>
