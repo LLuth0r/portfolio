@@ -1,6 +1,7 @@
 import Paper from '@mui/material/Paper';
 import './Home.css';
 import Family from './family-pic.jpg';
+import Header from '../../components/Header/Header';
 
 //Cards for cards section
 import Card1 from '../../components/Card1/Card1';
@@ -33,6 +34,7 @@ export default function Home() {
 		
 	return (
 		<div className='home'>
+      <Header />
 			<Paper className='home-paper' elevation={10}>
 				<div className='developer'>
 					<h1>Developer</h1>
